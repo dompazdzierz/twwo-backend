@@ -4,7 +4,7 @@ pipeline {
     }
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dompazdzierz')
+        DOCKERHUB_CREDENTIALS = credentials('aa5d6d7c-2b40-417c-996b-fc08ca7366bd')
         IMAGE_NAME = 'mojefajne/psi'
         IMAGE_TAG = 'latest'
     }
