@@ -16,12 +16,6 @@ pipeline {
             }
         }
         
-        stage('Compile') {
-            steps {
-                sh './mvnw clean package'
-            }
-        }
-        
         stage('Build') {
             steps {
                 sh 'docker build --no-cache -t $IMAGE_NAME:$IMAGE_TAG backend/'
