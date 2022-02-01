@@ -17,7 +17,6 @@ public interface AuthController {
         private String password;
     }
 
-
     @Data
     class AuthUserResponse{
         private int id;
