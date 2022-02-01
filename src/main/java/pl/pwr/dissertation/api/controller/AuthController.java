@@ -18,7 +18,6 @@ public interface AuthController {
     }
 
 
-
     @Data
     class AuthUserResponse{
         private int id;
