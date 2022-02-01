@@ -1,6 +1,6 @@
 
 FROM maven:3.8.4-openjdk-17-slim AS build
-COPY backend /home/app
+COPY . /home/app
 RUN mvn -f /home/app/pom.xml package
 
 FROM openjdk:11-ea-17-jre-slim
